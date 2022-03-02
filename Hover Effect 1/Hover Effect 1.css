@@ -53,5 +53,24 @@ body{
     font-size: 10pt;
 
 }
+/*media query*/
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  /* For tablets: */
+  @media only screen and (min-width: 450px) {
+    .col-s-4 {width: 70%;}
+  }
+  @media only screen and (min-width: 600px) {
+    .col-s-4 {width: 60%;}
+  }
+  /* For desktop: */
+  @media only screen and (min-width: 800px) {
+    .col-s-4 {width: 40%;}
+  }
+  @media only screen and (min-width: 1000px) {
+    .col-4 {width: 35%;}
+  }
 
 

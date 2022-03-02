@@ -2,6 +2,7 @@ body{
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 350px ;
 }
 .container {
     width: 35%;
@@ -11,6 +12,7 @@ body{
     background: linear-gradient(to right, #0F2027, #203A43,  #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,8 +57,8 @@ body{
 }
 /*media query*/
 /* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+  @media only screen and (min-width: 300px) {
+    .col-s-4 {width: 70%;}
   }
   /* For tablets: */
   @media only screen and (min-width: 450px) {

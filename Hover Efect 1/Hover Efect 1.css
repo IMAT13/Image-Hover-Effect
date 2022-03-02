@@ -18,20 +18,28 @@ body{
 }
 .card{
     width: 150px;
-    height: 150px;
+    height: 155px;
     background-color: aliceblue;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     border-radius: 15px;
     justify-content: center;
     position: relative;
+    transition: all 0.4s;
 
 }
 .card img {
     width: 150px;
-    height: 150px;
+    height: 155px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-
+    transition: all 0.4s;
 }
+.card:hover {
+    width: 155px;
+}
+.card:hover img{
+    margin-top: -45px;
+}
+
 

@@ -24,8 +24,10 @@ body{
     display: flex;
     border-radius: 15px;
     justify-content: center;
+    align-items: center;
     position: relative;
     transition: all 0.4s;
+    flex-direction: column;
 
 }
 .card img {
@@ -34,12 +36,22 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     transition: all 0.4s;
+    z-index: 10;
 }
 .card:hover {
     width: 155px;
 }
 .card:hover img{
-    margin-top: -45px;
+    margin-top: -60px;
+}
+.card::before {
+    content: "Ali Qavi (Front-End)";
+    bottom: 5px;
+    position: absolute;
+    color: #2C5364;
+    font-family:'Brush Script MT',cursive;
+    font-size: 10pt;
+
 }
 
 
